@@ -1,8 +1,7 @@
 {
   "name": "stylz",
-  "description": "Helper functions for writing styles in js",
+  "description": "Helper functions for writing styles in JS",
   "main": "dist/stylz.js",
-  "version": "0.0.0-semantically-released",
   "repository": {
     "type": "git",
     "url": "https://github.com/kitze/stylz.git"
@@ -12,8 +11,10 @@
     "javascript",
     "helpers",
     "js",
-    "lodash",
-    "underscore"
+    "styles",
+    "inline styles",
+    "mixins",
+    "sass"
   ],
   "browserify": {
     "transform": [
@@ -30,15 +31,12 @@
     "babelify": "6.4.0",
     "browserify": "13.0.1",
     "color": "^0.11.1",
-    "lodash": "4.12.0",
     "uglify": "0.1.5",
     "watchify": "3.7.0"
   },
   "devDependencies": {
-    "atob": "2.0.2",
     "babel": "5.8.34",
     "browserify-shim": "3.8.12",
-    "btoa": "1.1.2",
     "chai": "3.5.0",
     "codecov.io": "0.1.6",
     "commitizen": "2.8.1",
@@ -47,8 +45,7 @@
     "jsdoc": "^3.4.0",
     "minami": "^1.1.1",
     "mocha": "2.4.5",
-    "semantic-release": "4.3.5",
-    "underscore.string": "3.3.4"
+    "semantic-release": "^4.3.5"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"

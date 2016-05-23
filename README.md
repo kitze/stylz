@@ -1,9 +1,10 @@
 # Stylz
 [Source on GitHub](https://github.com/kitze/kitze-js-helpers)
 
-![NPM version](https://img.shields.io/npm/v/kitze-js-helpers.svg)
-![Licence](https://img.shields.io/npm/l/kitze-js-helpers.svg)
+![NPM version](https://img.shields.io/npm/v/stylz.svg)
+![Licence](https://img.shields.io/npm/l/stylz.svg)
 ![Dependencies](https://img.shields.io/david/kitze/kitze-js-helpers.svg)
+![Coverage](https://img.shields.io/codecov/c/github/kitze/stylz.svg)
 
 What is it?
 -------

@@ -4,7 +4,7 @@
   "authors": [
     "Kristjian Ristovski <kristijan.mkd@gmail.com>"
   ],
-  "description": "js helpers",
+  "description": "Helper functions for writing styles in JS",
   "main": "dist/stylz.js",
   "keywords": [
     "kitze",
