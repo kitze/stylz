@@ -8,6 +8,7 @@ import * as look from './mixins/look';
 import * as position from './mixins/position';
 import * as pseudo from './mixins/pseudo';
 import * as size from './mixins/size';
+import * as placeholders from './placeholders';
 
 var allMixins = {
   ...animations,
@@ -19,7 +20,8 @@ var allMixins = {
   ...look,
   ...position,
   ...pseudo,
-  ...size
+  ...size,
+  ...placeholders
 };
 
 export default allMixins;

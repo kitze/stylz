@@ -1680,12 +1680,16 @@ var _mixinsSize = require('./mixins/size');
 
 var size = _interopRequireWildcard(_mixinsSize);
 
-var allMixins = _extends({}, animations, color, fonts, gradients, images, layout, look, position, pseudo, size);
+var _placeholders = require('./placeholders');
+
+var placeholders = _interopRequireWildcard(_placeholders);
+
+var allMixins = _extends({}, animations, color, fonts, gradients, images, layout, look, position, pseudo, size, placeholders);
 
 exports['default'] = allMixins;
 module.exports = exports['default'];
 
-},{"./mixins/animations":8,"./mixins/color":9,"./mixins/fonts":10,"./mixins/gradients":11,"./mixins/images":12,"./mixins/layout":13,"./mixins/look":14,"./mixins/position":15,"./mixins/pseudo":16,"./mixins/size":17}],8:[function(require,module,exports){
+},{"./mixins/animations":8,"./mixins/color":9,"./mixins/fonts":10,"./mixins/gradients":11,"./mixins/images":12,"./mixins/layout":13,"./mixins/look":14,"./mixins/position":15,"./mixins/pseudo":16,"./mixins/size":17,"./placeholders":18}],8:[function(require,module,exports){
 /** @module Images */
 
 /**
@@ -1799,7 +1803,7 @@ var sizeWeightHeight = function sizeWeightHeight(fontSize) {
 };
 exports.sizeWeightHeight = sizeWeightHeight;
 
-},{"../utils":18}],11:[function(require,module,exports){
+},{"../utils":19}],11:[function(require,module,exports){
 /** @module Gradients */
 
 /**
@@ -1862,7 +1866,25 @@ var flexGrid = function flexGrid() {
     flex: "0 0 " + 100 / cols + "%"
   };
 };
+
 exports.flexGrid = flexGrid;
+/**
+ * @description Adds flexBasis and maxWidth to the element, depending on the number parameter
+ * @param number
+ * @returns {{flexBasis: string, maxWidth: string}}
+ */
+var flexSize = function flexSize() {
+  var number = arguments.length <= 0 || arguments[0] === undefined ? 1 : arguments[0];
+
+  var res = 100 / number;
+  var percent = res + "%";
+
+  return {
+    flexBasis: percent,
+    maxWidth: percent
+  };
+};
+exports.flexSize = flexSize;
 
 },{}],14:[function(require,module,exports){
 /** @module Look */
@@ -1961,7 +1983,7 @@ var show = function show(val) {
 };
 exports.show = show;
 
-},{"../colors":6,"../utils":18}],15:[function(require,module,exports){
+},{"../colors":6,"../utils":19}],15:[function(require,module,exports){
 /** @module Position */
 
 /**
@@ -2278,6 +2300,58 @@ var margin = {
 exports.margin = margin;
 
 },{}],18:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _colors = require('./colors');
+
+var _colors2 = _interopRequireDefault(_colors);
+
+var stretch = {
+  width: '100%',
+  height: '100%'
+};
+
+exports.stretch = stretch;
+/* Resets the style for an element */
+var unstyle = {
+  button: {
+    outline: 'none',
+    appearance: 'none'
+  },
+  input: {
+    border: 0,
+    outline: 'none',
+    appearance: 'none'
+  },
+  link: {
+    textDecoration: 'none',
+    color: _colors2['default'].black
+  },
+  list: {
+    padding: 0,
+    margin: 0,
+    listStyleType: 'none'
+  }
+};
+
+exports.unstyle = unstyle;
+var cardShadow = {
+  boxShadow: 'rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px'
+};
+
+exports.cardShadow = cardShadow;
+var disableTapHighlight = {
+  WebkitTapHighlightColor: 'rgba(0,0,0,0)'
+};
+exports.disableTapHighlight = disableTapHighlight;
+
+},{"./colors":6}],19:[function(require,module,exports){
 /**
  * @description Checks if the parameter is as tring
  * @param string

@@ -1,5 +1,5 @@
 # Stylz
-[Source on GitHub](https://github.com/kitze/kitze-js-helpers)
+[Source on GitHub](https://github.com/kitze/kitze-js-helpers)  
 [NPM Package](https://www.npmjs.com/package/stylz)
 
 ![NPM version](https://img.shields.io/npm/v/stylz.svg)
