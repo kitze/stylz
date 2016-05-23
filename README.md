@@ -11,6 +11,10 @@ What is it?
 -------
 Library of mixins for faster and easier writing styles in js.
 
+Examples
+-------
+Coming soon...
+
 Documentation
 -------
 You can see the [full documentation here](http://stylz.surge.sh/).
