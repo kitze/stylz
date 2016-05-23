@@ -1,5 +1,6 @@
 {
   "name": "stylz",
+  "version": "0.0.0-semantically-released",
   "description": "Helper functions for writing styles in JS",
   "main": "dist/stylz.js",
   "repository": {
@@ -41,7 +42,6 @@
     "cz-conventional-changelog": "1.1.6",
     "istanbul": "0.4.2",
     "jsdoc": "^3.4.0",
-    "lodash": "^4.13.0",
     "minami": "^1.1.1",
     "mocha": "2.4.5",
     "semantic-release": "^4.3.5",

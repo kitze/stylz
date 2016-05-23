@@ -1,15 +1,12 @@
 import {expect} from 'chai';
-import _ from 'lodash';
 import * as color from '../../src/mixins/color';
 
 describe('color', function () {
   describe('randomColor', function () {
     it('should return a random color', function () {
-      const randomColors = _.times(1000, color.randomColor);
-      _.each(randomColors, randomColor => {
-        expect(randomColor).to.have.length(7);
-        expect(randomColor[0]).to.eql('#');
-      });
+      const randomColor = color.randomColor();
+      expect(randomColor).to.have.length(7);
+      expect(randomColor[0]).to.eql('#');
     });
   });
   describe('darken', function () {
