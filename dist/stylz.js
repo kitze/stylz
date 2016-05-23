@@ -2072,7 +2072,7 @@ var resetPseudoProperties = function resetPseudoProperties() {
   var _ref2;
 
   var property = arguments.length <= 1 || arguments[1] === undefined ? 'backgroundColor' : arguments[1];
-  return (_ref2 = {}, _defineProperty(_ref2, property, color), _defineProperty(_ref2, ':hover', _defineProperty({}, property, color)), _defineProperty(_ref2, ':active', _defineProperty({}, property, color)), _defineProperty(_ref2, 'cursor', 'default'), _ref2);
+  return _ref2 = {}, _defineProperty(_ref2, property, color), _defineProperty(_ref2, ':hover', _defineProperty({}, property, color)), _defineProperty(_ref2, ':active', _defineProperty({}, property, color)), _defineProperty(_ref2, 'cursor', 'default'), _ref2;
 };
 exports.resetPseudoProperties = resetPseudoProperties;
 

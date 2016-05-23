@@ -1,5 +1,4 @@
 import {expect} from 'chai';
-import _ from 'lodash';
 import * as layout from '../../src/mixins/layout';
 
 describe('layout', function () {
