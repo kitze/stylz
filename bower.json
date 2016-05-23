@@ -1,0 +1,22 @@
+{
+  "name": "stylz",
+  "homepage": "https://github.com/kitze/stylz",
+  "authors": [
+    "Kristjian Ristovski <kristijan.mkd@gmail.com>"
+  ],
+  "description": "js helpers",
+  "main": "dist/stylz.js",
+  "keywords": [
+    "kitze",
+    "js",
+    "helpers"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
