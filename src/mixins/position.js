@@ -1,3 +1,5 @@
+/** @module Position */
+
 /**
  * @description Returns an object with properties: position absolute and top,right, bottom, left, depending of the value
  * @param {number} top

@@ -1,3 +1,5 @@
+/** @module Size */
+
 /**
  * @description Adds width and height to an element
  * @param width

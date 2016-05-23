@@ -1,5 +1,3 @@
-/** @module Debugging */
-
 import {randomColor} from './mixins/color';
 
 export class DebugColors {

@@ -1686,7 +1686,7 @@ exports['default'] = allMixins;
 module.exports = exports['default'];
 
 },{"./mixins/animations":8,"./mixins/color":9,"./mixins/fonts":10,"./mixins/gradients":11,"./mixins/images":12,"./mixins/layout":13,"./mixins/look":14,"./mixins/position":15,"./mixins/pseudo":16,"./mixins/size":17}],8:[function(require,module,exports){
-/** @module Animations */
+/** @module Images */
 
 /**
  * Mixin for the transition property with some default animation values
@@ -1821,12 +1821,13 @@ var topToBottom = function topToBottom(fromColor, toColor) {
 exports.topToBottom = topToBottom;
 
 },{}],12:[function(require,module,exports){
-/** @module Retruns an object with a backgroundImage and backgroundSize property
+/** @module Images */
+
+/** @description Retruns an object with a backgroundImage and backgroundSize property
  * @param {String} url
  * @param {String} cover
  * @return {{backgroundImage: string}}
  */
-
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -1843,6 +1844,8 @@ var backgroundImg = function backgroundImg(url, cover) {
 exports.backgroundImg = backgroundImg;
 
 },{}],13:[function(require,module,exports){
+/** @module Images */
+
 /**
  * @description Returns an object with a flex property and a flex basis of 100 divided by the number of columns
  * @param cols
@@ -1959,6 +1962,8 @@ var show = function show(val) {
 exports.show = show;
 
 },{"../colors":6,"../utils":18}],15:[function(require,module,exports){
+/** @module Position */
+
 /**
  * @description Returns an object with properties: position absolute and top,right, bottom, left, depending of the value
  * @param {number} top
@@ -2014,6 +2019,8 @@ var cornerOffset = function cornerOffset() {
 exports.cornerOffset = cornerOffset;
 
 },{}],16:[function(require,module,exports){
+/** @module Pseudo */
+
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -2070,6 +2077,8 @@ var resetPseudoProperties = function resetPseudoProperties() {
 exports.resetPseudoProperties = resetPseudoProperties;
 
 },{"./animations":8,"./color":9}],17:[function(require,module,exports){
+/** @module Size */
+
 /**
  * @description Adds width and height to an element
  * @param width

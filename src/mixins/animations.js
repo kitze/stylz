@@ -1,4 +1,4 @@
-/** @module Animations */
+/** @module Images */
 
 /**
  * Mixin for the transition property with some default animation values

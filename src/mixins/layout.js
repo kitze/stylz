@@ -1,3 +1,5 @@
+/** @module Images */
+
 /**
  * @description Returns an object with a flex property and a flex basis of 100 divided by the number of columns
  * @param cols

@@ -1,3 +1,5 @@
+/** @module Pseudo */
+
 import {animate} from './animations';
 import {darken} from './color';
 
