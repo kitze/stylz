@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>size.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-Animations.html">Animations</a></li><li><a href="module-Color.html">Color</a></li><li><a href="module-Fonts.html">Fonts</a></li><li><a href="module-Gradients.html">Gradients</a></li><li><a href="module-Look.html">Look</a></li><li><a href="module-Retruns%2520an%2520object%2520with%2520a%2520backgroundImage%2520and%2520backgroundSize%2520property.html">Retruns an object with a backgroundImage and backgroundSize property</a></li></ul><h3>Global</h3><ul><li><a href="global.html#absolute">absolute</a></li><li><a href="global.html#cornerOffset">cornerOffset</a></li><li><a href="global.html#fillParent">fillParent</a></li><li><a href="global.html#fixedHeight">fixedHeight</a></li><li><a href="global.html#fixedWidth">fixedWidth</a></li><li><a href="global.html#flexGrid">flexGrid</a></li><li><a href="global.html#hoverAndClick">hoverAndClick</a></li><li><a href="global.html#maxHeight">maxHeight</a></li><li><a href="global.html#maxSize">maxSize</a></li><li><a href="global.html#minSize">minSize</a></li><li><a href="global.html#resetPseudoProperties">resetPseudoProperties</a></li><li><a href="global.html#size">size</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">size.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @description Adds width and height to an element
+ * @param width
+ * @param height
+ */
+export const size = (width, height = width) => ({
+  width: width,
+  height: height
+});
+
+/**
+ * @description Adds maxWidth and maxHeight to an element
+ * @param size
+ * @returns {{maxWidth: *, maxHeight: *}}
+ */
+export const maxSize = (width, height = width) => ({
+  maxWidth: width,
+  maxHeight: height
+});
+
+/**
+ * @description Adds minHeight and minWidth to an element
+ * @param size
+ */
+export const minSize = (width, height = width) => ({
+  minWidth: width,
+  minHeight: height
+});
+
+/**
+ * @description Adds height and mixHeight to an element
+ * @param height
+ */
+export const maxHeight = (height) => ({
+  height,
+  maxHeight: height
+});
+
+/**
+ * @description Adds height, maxHeight and minHeight to an element
+ * @param height
+ */
+export const fixedHeight = height => ({
+  height,
+  maxHeight: height,
+  minHeight: height
+});
+
+/**
+ * @description Adds height, maxHeight and minHeight to an element
+ * @param height
+ */
+export const fixedWidth = width => ({
+  width,
+  maxWidth: width,
+  minWidth: width
+});
+
+/**
+ * @description Makes the element take full width and height
+ */
+export const fillParent = () => ({
+  ...fixedHeight('100%'),
+  ...fixedWidth('100%'),
+  overflow: 'hidden'
+});
+
+export const padding = {
+  /**
+   * @description Adds horizontal padding to an element
+   * @param left
+   * @param right
+   */
+  horizontal: (left, right = left) => ({
+    paddingLeft: left,
+    paddingRight: right
+  }),
+  /**
+   * @description Adds vertical padding to an element
+   * @param left
+   * @param right
+   */
+  vertical: (left, right = left) => ({
+    paddingTop: left,
+    paddingBottom: right
+  }),
+  /**
+   * @description Adds padding to both sides of an element
+   * @param vertical
+   * @param horizontal
+   */
+  both: (vertical, horizontal = vertical) => ({
+    paddingTop: vertical,
+    paddingBottom: vertical,
+    paddingLeft: horizontal,
+    paddingRight: horizontal
+  })
+};
+
+export const margin = {
+  /**
+   * @description Adds horizontal margin to an element
+   * @param left
+   * @param right
+   */
+  horizontal: (left, right = left) => ({
+    marginLeft: left,
+    marginRight: right
+  }),
+  /**
+   * @description Adds vertical margin to an element
+   * @param value
+   */
+  vertical: (top, bottom = top) => ({
+    marginTop: top,
+    marginBottom: bottom
+  }),
+  /**
+   * @description Adds margin to both sides of an element
+   * @param vertical
+   * @param horizontal
+   */
+  both: (vertical, horizontal = vertical) => ({
+    marginTop: vertical,
+    marginBottom: vertical,
+    marginLeft: horizontal,
+    marginRight: horizontal
+  })
+};</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon May 23 2016 11:50:35 GMT+0200 (CEST) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

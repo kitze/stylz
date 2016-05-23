@@ -2031,10 +2031,10 @@ var _color = require('./color');
 /**
  * @description Returns an object that makes the element interactive on click, hover, etc.
  * @param {String} color
- * @param {String, *} [darkenColor]
+ * @param {String | boolean} [darkenColor]
  * @param {boolean} [useBackgroundColor]
- * @param {boolean, String} [animation]
- * @param {boolean, String} [active]
+ * @param {boolean | String} [animation]
+ * @param {boolean | String} [active]
  */
 var hoverAndClick = function hoverAndClick(color, darkenColor, useBackgroundColor, animation, active) {
   if (darkenColor === undefined) darkenColor = (0, _color.darken)(color, 0.7);
@@ -2056,8 +2056,8 @@ var hoverAndClick = function hoverAndClick(color, darkenColor, useBackgroundColo
 exports.hoverAndClick = hoverAndClick;
 /**
  * @description Resets the backgroundColor when default, hovered and active
- * @param {String, *} [color]
- * @param {String, *} [property]
+ * @param {String | *} [color]
+ * @param {String | *} [property]
  */
 var resetPseudoProperties = function resetPseudoProperties() {
   var color = arguments.length <= 0 || arguments[0] === undefined ? '#000000' : arguments[0];
