@@ -13,7 +13,7 @@ Library of mixins for faster and easier writing styles in js.
 
 Examples
 -------
-Coming soon......
+Coming soon...
 
 Documentation
 -------
