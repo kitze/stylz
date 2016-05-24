@@ -1776,21 +1776,24 @@ var _utils = require('../utils');
  * @param value
  * @returns {{fontSize: *, lineHeight: *}}
  */
-var sizeHeight = function sizeHeight(value) {
-  return {
-    fontSize: value,
-    lineHeight: (0, _utils.toPx)(value)
-  };
+var fontSizeHeight = function fontSizeHeight(size) {
+  var lineHeight = arguments.length <= 1 || arguments[1] === undefined ? size : arguments[1];
+  return (function () {
+    return {
+      fontSize: size,
+      lineHeight: (0, _utils.toPx)(lineHeight)
+    };
+  })();
 };
 
-exports.sizeHeight = sizeHeight;
+exports.fontSizeHeight = fontSizeHeight;
 /**
  * @description Returns an object with font-size, font-weight, and line-height
  * @param {number} fontSize
  * @param {number} fontWeight
  * @param {number} lineHeight
  */
-var sizeWeightHeight = function sizeWeightHeight(fontSize) {
+var fontStyle = function fontStyle(fontSize) {
   var fontWeight = arguments.length <= 1 || arguments[1] === undefined ? 300 : arguments[1];
   var lineHeight = arguments.length <= 2 || arguments[2] === undefined ? fontSize : arguments[2];
   return (function () {
@@ -1801,7 +1804,7 @@ var sizeWeightHeight = function sizeWeightHeight(fontSize) {
     };
   })();
 };
-exports.sizeWeightHeight = sizeWeightHeight;
+exports.fontStyle = fontStyle;
 
 },{"../utils":19}],11:[function(require,module,exports){
 /** @module Gradients */

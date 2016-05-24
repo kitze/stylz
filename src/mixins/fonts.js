@@ -7,10 +7,10 @@ import {toPx} from '../utils';
  * @param value
  * @returns {{fontSize: *, lineHeight: *}}
  */
-export const sizeHeight = value => {
+export const fontSizeHeight = (size, lineHeight = size) => {
   return {
-    fontSize: value,
-    lineHeight: toPx(value)
+    fontSize: size,
+    lineHeight: toPx(lineHeight)
   }
 };
 
@@ -20,7 +20,7 @@ export const sizeHeight = value => {
  * @param {number} fontWeight
  * @param {number} lineHeight
  */
-export const sizeWeightHeight = (fontSize, fontWeight = 300, lineHeight = fontSize) => ({
+export const fontStyle = (fontSize, fontWeight = 300, lineHeight = fontSize) => ({
   fontSize,
   fontWeight,
   lineHeight: toPx(lineHeight)
